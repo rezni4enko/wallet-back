@@ -1,9 +1,7 @@
 import { Column, Model, DataType, Table } from 'sequelize-typescript'
 
-
 interface TransactionDTO {
    transaction_value: string;
-
 }
 
 @Table({ tableName: 'transaction' })

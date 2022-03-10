@@ -4,6 +4,7 @@ import { SequelizeModule } from '@nestjs/sequelize';
 import { TransactionModule } from './transaction/transaction.module';
 import { ConfigModule } from '@nestjs/config'
 
+
 @Module({
 
   controllers: [],
@@ -15,7 +16,7 @@ import { ConfigModule } from '@nestjs/config'
     SequelizeModule.forRoot({
       dialect: 'postgres',
       host: 'localhost',
-      port: 3002,
+      port: 5432,
       username: 'postgres',
       password: '8836612',
       database: 'transaction',
